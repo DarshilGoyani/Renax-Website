@@ -1,47 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RENAX</title>
-    
-    <!-- animate css -->
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <title>Car Details - RENAX</title>
 
     <!-- owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
 
-    <!-- swiper carousel -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
-
-    <!-- remixicon icons -->
-    <link rel="stylesheet" href="remix-icon/remixicon.css" type="text/css">
-
-    <!-- font awesom icons -->
-        <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css"
-    />
-    <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
-    />
-    <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
-    />
-    <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
-    />
-    <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
-    />
-
-    <!-- bootstrap icons -->
-    <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css" />
 
     <!-- bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -50,12 +24,18 @@
     <link rel="stylesheet" href="fonts/Outfit/stylesheet.css" type="text/css">
 
     <!-- main css -->
-    <link rel="stylesheet" href="css/cars.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- product css -->
+    <link rel="stylesheet" href="css/product.css" type="text/css">
 
     <!-- max css -->
     <link rel="stylesheet" href="css/max.css" type="text/css">
+    
 </head>
+
 <body>
+
     <!-- header -->
     <header class="py-4 position-absolute top-0 z-3 start-0 w-100">
         <div class="container">
@@ -232,267 +212,310 @@
     </header>
 
     <main>
-        <!-- banner -->
-        <section class="banner position-relative text-center d-flex align-items-center justify-content-center flex-column">
+        <!-- Product Hero Section -->
+        <section class="product-detail-hero position-relative">
             <div class="container">
-                <h6 class="text-uppercase">Select Your Car</h6>
-                <h2 class="text-white fw-semibold">Luxury <span>Car Fleet</span></h2> 
-                <div class="banner-design z-3 position-absolute start-50">
-                        <div class="d-flex justify-content-center align-items-center">
-                        <div class="body-design "></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h6 class="fw-light">* PREMIUM LUXURY</h6>
+                        <h1 class="text-white fw-bold mb-3">Lamborghini Urus</h1>
+                        <div class="d-flex align-items-center">
+                            <div class="price-tag">$750<sub>/DAY</sub></div>
+                            <div class="ms-4">
+                                <ul class="d-flex mb-0 ps-0">
+                                    <li class="me-3 fw-light text-white"><i class="fa-regular fa-car-side me-1"></i> 4 Seats</li>
+                                    <li class="mx-3 fw-light text-white"><i class="fa-regular fa-gears me-1"></i> Auto</li>
+                                    <li class="mx-3 fw-light text-white"><i class="fa-regular fa-suitcase me-1"></i> 2 Bags</li>
+                                    <li class="ms-3 fw-light text-white"><i class="fa-regular fa-user me-1"></i> Age 25</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <a href="#booking" class="banner-viewd transition text-dark fw-light px-5 py-3 me-2 rounded-pill">Book Now<i class="ri-arrow-right-up-long-line ms-2"></i></a>
+                        <a href="cars.html" class="banner-rentn transition text-white fw-light border border-white px-5 py-3 ms-2 rounded-pill">Back to Cars<i class="ri-arrow-right-up-long-line ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- product row -->
-        <section class="product py">
+        <!-- Product Details -->
+        <section class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/7-7.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Lamborghini Urus</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
+                    <!-- Car Gallery -->
+                    <div class="col-lg-7 mb-5 mb-lg-0">
+                        <div class="car-gallery">
+                            <div class="main-image">
+                                <img src="images/7-7.jpg" class="img-fluid rounded-4" alt="Lamborghini Urus" id="mainImage">
                             </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$750 <sub class="fw-light">/day</sub></h5>
+                            <div class="thumbnails">
+                                <div class="thumb active" onclick="changeImage('images/7-7.jpg')">
+                                    <img src="images/7-7.jpg" alt="Front View">
+                                </div>
+                                <div class="thumb" onclick="changeImage('images/8-8.jpg')">
+                                    <img src="images/8-8.jpg" alt="Side View">
+                                </div>
+                                <div class="thumb" onclick="changeImage('images/9.jpg')">
+                                    <img src="images/9.jpg" alt="Back View">
+                                </div>
+                                <div class="thumb" onclick="changeImage('images/11-1.jpg')">
+                                    <img src="images/11-1.jpg" alt="Interior">
+                                </div>
+                            </div>
+                        </div>
 
-                            </div>
+                        <!-- Car Description -->
+                        <div class="mt-5">
+                            <h3 class="text-white section-title">Description</h3>
+                            <p class="fw-light">The Lamborghini Urus is the world's first Super Sport Utility Vehicle, in which luxury, sportiness and performance meet comfort and versatility. It offers best-in-class driving dynamics, alongside its unmistakable elegance of design.</p>
+                            <p class="fw-light">Urus embodies the characteristics of multiple souls: sporty, elegant and off-road, and has a suitability for everyday driving in a range of environments. With its surprisingly distinct engine sound, combined with high performance, the Urus is anything but typical.</p>
                         </div>
+
+                        <!-- Features -->
+                        <div class="mt-5">
+                            <h3 class="text-white section-title">Features</h3>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa-regular fa-snowflake"></i>
+                                    </div>
+                                    <div class="feature-text">Climate Control</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa-regular fa-bluetooth"></i>
+                                    </div>
+                                    <div class="feature-text">Bluetooth</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa-regular fa-navigation"></i>
+                                    </div>
+                                    <div class="feature-text">Navigation System</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa-regular fa-shield-check"></i>
+                                    </div>
+                                    <div class="feature-text">Safety Package</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa-regular fa-camera-security"></i>
+                                    </div>
+                                    <div class="feature-text">360 Camera</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fa-regular fa-engine"></i>
+                                    </div>
+                                    <div class="feature-text">V8 Engine</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/8-8.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Aston Martin DBX</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$500 <sub class="fw-light">/day</sub></h5>
 
+                    <!-- Specifications & Booking -->
+                    <div class="col-lg-5">
+                        <!-- Specifications -->
+                        <div class="specs-table mb-5">
+                            <h3 class="text-white section-title">Specifications</h3>
+                            <div class="spec-item">
+                                <span class="spec-label">Engine</span>
+                                <span class="spec-value">4.0L V8 Twin-Turbo</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Horsepower</span>
+                                <span class="spec-value">641 HP</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">0-100 km/h</span>
+                                <span class="spec-value">3.6 seconds</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Top Speed</span>
+                                <span class="spec-value">305 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Transmission</span>
+                                <span class="spec-value">8-Speed Automatic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Drive Type</span>
+                                <span class="spec-value">All-Wheel Drive</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Fuel Type</span>
+                                <span class="spec-value">Petrol</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Doors</span>
+                                <span class="spec-value">5</span>
                             </div>
                         </div>
+
+                        <!-- Booking Card -->
+                        <div class="booking-card" id="booking">
+                            <h3 class="text-white section-title">Book This Car</h3>
+                            <div class="price-tag mb-4">$750<sub>/DAY</sub></div>
+                            
+                            <form class="booking-form">
+                                <select class="form-select" required>
+                                    <option value="">Pick-up Location</option>
+                                    <option value="dubai">Dubai</option>
+                                    <option value="abu-dhabi">Abu Dhabi</option>
+                                    <option value="sharjah">Sharjah</option>
+                                </select>
+                                
+                                <select class="form-select" required>
+                                    <option value="">Drop-off Location</option>
+                                    <option value="dubai">Dubai</option>
+                                    <option value="abu-dhabi">Abu Dhabi</option>
+                                    <option value="sharjah">Sharjah</option>
+                                </select>
+                                
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="date" class="form-control" placeholder="Pick-up Date" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="date" class="form-control" placeholder="Drop-off Date" required>
+                                    </div>
+                                </div>
+                                
+                                <select class="form-select" required>
+                                    <option value="">Rental Duration</option>
+                                    <option value="1">1 Day</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="7">1 Week</option>
+                                    <option value="30">1 Month</option>
+                                </select>
+                                
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                
+                                <button type="submit" class="booking-btn transition">
+                                    <i class="fa-regular fa-calendar-check me-2"></i>Reserve Now
+                                </button>
+                            </form>
+                            
+                            <div class="mt-4 pt-3 border-top border-secondary">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="spec-label">Insurance Included</span>
+                                    <span class="spec-value"><i class="fa-regular fa-check text-success"></i></span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="spec-label">Free Cancellation</span>
+                                    <span class="spec-value"><i class="fa-regular fa-check text-success"></i></span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="spec-label">24/7 Support</span>
+                                    <span class="spec-value"><i class="fa-regular fa-check text-success"></i></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/9.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Bugatti Mistral W16</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">2 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$800 <sub class="fw-light">/day</sub></h5>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/11-1.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Bentley Bentayga</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$600 <sub class="fw-light">/day</sub></h5>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/12-1.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Rolls Royce Cullinan</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$900 <sub class="fw-light">/day</sub></h5>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/13.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Bentley Continental</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$500 <sub class="fw-light">/day</sub></h5>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/14-1.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">Audi RS7 Sportback</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$450 <sub class="fw-light">/day</sub></h5>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="product-catalogue px-2 position-relative rounded-4 px-0 w-50 " onclick="window.location.href='product.html'">
-                        <div class="product-img-wrapper overflow-hidden rounded-5">
-                            <img src="images/15.jpg" class="img-fluid transition object-fit-cover" alt="img">
-                        </div>
-                        <div class="product-info position-absolute p-4 rounded-5 bg-dark text-white">
-                        <div class="d-flex justify-content-between">
-                            <div class="info-left">
-                            <h5 class="text-white fw-semibold">AUDI Q8</h5>
-                            <ul class="ps-0 mb-0 d-flex">
-                                <li class="fw-light"><img src="images/door.png" class="me-1" alt="">4 Seats</li>
-                                <li class="fw-light px-3"><i class="fa-solid fa-transmission me-1"></i> Auto</li>
-                                <li class="fw-light"><i class="fa-solid fa-suitcase me-1"></i>2 Bags</li>
-                            </ul>
-                            </div>
-                            <div class="info-right align-self-end d-flex">
-                                <a href="javascript:void(0)" class="rounded-pill transition fw-semibold me-3 p-3 fw-light text-dark">Details</a>
-                                <h5>$450 <sub class="fw-light">/day</sub></h5>
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagination justify-content-center">
-                    <ul class="ps-0 mb-0 d-flex">
-                        <li><a href="javascript:void(0)" class="rounded-circle transition d-inline-block text-center mb-0 d-flex text-white align-items-center justify-content-center mx-2"><i class="fa-light fa-angle-left text-white"></i></a></li>
-                        <li><a href="javascript:void(0)" class="rounded-circle transition d-inline-block text-center mb-0 d-flex text-white align-items-center justify-content-center mx-2">1</a></li>
-                        <li><a href="javascript:void(0)" class="active rounded-circle transition d-inline-block text-center mb-0 d-flex text-dark align-items-center justify-content-center mx-2">2</a></li>
-                        <li><a href="javascript:void(0)" class="rounded-circle transition d-inline-block text-center mb-0 d-flex text-white align-items-center justify-content-center mx-2">3</a></li>
-                        <li><a href="javascript:void(0)" class="rounded-circle transition d-inline-block text-center mb-0 d-flex text-white align-items-center justify-content-center mx-2"><i class="fa-light fa-angle-right text-white"></i></a></li>
-                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- poster-1 -->
-        <section class="poster-1 position-relative py">
+        <!-- Similar Cars -->
+        <section class="product py pt-0">
             <div class="container">
-                <div class="poster-1-title z-3 mb-5 text-center">
-                    <h6 class="mb-3 fw-light">RENT NOW</h6>
-                    <h2 class="text-white fw-semibold">Book Auto Rental</h2>
+                <div class="product-title mb-5 text-center">
+                    <h6 class="mb-3 fw-light">SIMILAR CARS</h6>
+                    <h2 class="text-white fw-semibold">You Might <span>Also Like</span></h2>
                 </div>
-                <form action="" class="d-flex">
-                    <div class="rent-item rounded-pill mx-auto overflow-hidden p-2 d-flex w-100">
-                        <select class="py-3 px-4 " name="" id="">
-                            <option value="">Choose Car Type</option>
-                            <option value="">All</option>
-                            <option value="">Luxury Cars</option>
-                            <option value="">Sport Cars</option>
-                            <option value="">SUVs</option>
-                            <option value="">Convertible</option>
-                        </select>
-                        <select class="py-3 px-4 " name="" id="">
-                            <option value="">Pick Up Location</option>
-                            <option value="">Dubai</option>
-                            <option value="">Abu Dhabi</option>
-                            <option value="">Sharjah</option>
-                            <option value="">Alain</option>
-                        </select>
-                        <select class="py-3 px-4 " name="" id="">
-                            <option value="">Drop Off Location</option>
-                            <option value="">Alain</option>
-                            <option value="">Sharjah</option>
-                            <option value="">Abu Dhabi</option>
-                            <option value="">Dubai</option>
-                        </select>
-                        <a href="javascript:void(0)" class="text-dark transition fw-light ms-4 px-5 py-3 rounded-pill mb-0 d-inline-block">Rent now</a>
+                <div class="product-carousel owl-carousel owl-theme">
+                    <!-- Similar Car Items (copy from your main page) -->
+                    <div class="item position-relative">
+                        <div class="product-item-wrapper rounded-5">
+                            <img src="images/8-8.jpg" class="img-fluid transition" alt="Aston Martin DBX">
+                        </div>
+                        <div class="img-cnt position-absolute d-inline-block p-4 rounded-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-block">
+                                    <h5 class="text-white">Aston Martin DBX</h5>
+                                    <ul class="d-flex mb-0 ps-0">
+                                        <li class="me-2 fw-light"><i class="fa-regular fa-car-side me-1"></i> 4 Seats</li>
+                                        <li class="mx-2 fw-light"><i class="fa-regular fa-gears me-1"></i> Auto</li>
+                                        <li class="mx-2 fw-light"><i class="fa-regular fa-suitcase me-1"></i> 2 Bags</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="product_detail.html" class="fw-light me-2 text-dark rounded-pill p-3 transition">Details</a>
+                                    <p class="fw-semibold mb-0">$500 <sub class="fw-light">/day</sub></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                    
+                    <div class="item position-relative">
+                        <div class="product-item-wrapper rounded-5">
+                            <img src="images/11-1.jpg" class="img-fluid transition" alt="Bentley Bentayga">
+                        </div>
+                        <div class="img-cnt position-absolute d-inline-block p-4 rounded-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-block">
+                                    <h5 class="text-white">Bentley Bentayga</h5>
+                                    <ul class="d-flex mb-0 ps-0">
+                                        <li class="me-2 fw-light"><i class="fa-regular fa-car-side me-1"></i> 4 Seats</li>
+                                        <li class="mx-2 fw-light"><i class="fa-regular fa-gears me-1"></i> Auto</li>
+                                        <li class="mx-2 fw-light"><i class="fa-regular fa-suitcase me-1"></i> 2 Bags</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="product_detail.html" class="fw-light me-2 text-dark rounded-pill p-3 transition">Details</a>
+                                    <p class="fw-semibold mb-0">$600 <sub class="fw-light">/day</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item position-relative">
+                        <div class="product-item-wrapper rounded-5">
+                            <img src="images/12-1.jpg" class="img-fluid transition" alt="Rolls Royce Cullinan">
+                        </div>
+                        <div class="img-cnt position-absolute d-inline-block p-4 rounded-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-block">
+                                    <h5 class="text-white">Rolls Royce Cullinan</h5>
+                                    <ul class="d-flex mb-0 ps-0">
+                                        <li class="me-2 fw-light"><i class="fa-regular fa-car-side me-1"></i> 4 Seats</li>
+                                        <li class="mx-2 fw-light"><i class="fa-regular fa-gears me-1"></i> Auto</li>
+                                        <li class="mx-2 fw-light"><i class="fa-regular fa-suitcase me-1"></i> 2 Bags</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="product_detail.html" class="fw-light me-2 text-dark rounded-pill p-3 transition">Details</a>
+                                    <p class="fw-semibold mb-0">$900 <sub class="fw-light">/day</sub></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- compony -->
-        <section class="compony py-3">
+        <!-- poster 3 (Call to Action) -->
+        <section class="poster-3 position-relative py">
             <div class="container">
-                <div class="compony-carousel owl-carousel owl-theme">
-                    <div class="item"><img src="images/6-34" alt="img"></div>
-                    <div class="item"><img src="images/1-2" alt="img"></div>
-                    <div class="item"><img src="images/2-23" alt="img"></div>
-                    <div class="item"><img src="images/8-34" alt="img"></div>
-                    <div class="item"><img src="images/7-34" alt="img"></div>
-                    <div class="item"><img src="images/5-34" alt="img"></div>
-                    <div class="item"><img src="images/4-34" alt="img"></div>
-                    <div class="item"><img src="images/3-34" alt="img"></div>
+                <div class="poster-3-title mb-5 text-center">
+                    <h6 class="mb-3 fw-light">NEED HELP?</h6>
+                    <h2 class="text-white fw-semibold">Contact Our Rental Experts</h2>
+                    <p class="text-white">We're here to help you find the perfect car for your needs.</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="tel:+971523334444" class="w-btn text-dark transition d-inline-block me-1 rounded-pill px-5 py-3"><i class="fa-light fa-phone me-2"></i>Call Now</a>
+                    <a href="contact.html" class="r-btn text-white transition d-inline-block ms-1 rounded-pill px-5 py-3">Contact Us <i class="fa-regular fa-arrow-up-right ms-2"></i></a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- footer -->
+    <!-- footer (copy from your main page) -->
     <footer class="">
         <div class="container">
             <div class="footer-about my-5 py-2 border border-dark py-4 rounded-4 d-flex justify-content-around align-items-center">
@@ -537,10 +560,10 @@
                         <h5 class="fw-bold text-white">Quick Links</h5>
                         <ul class="ps-3">
                             <li><a href="javascript:void(0)" class="text-white fw-light my-1 d-inline-block transition">About</a></li>
-                            <li><a href="javascript:void(0)" class="text-white fw-light my-1 d-inline-block transition">Cars</a></li>
+                            <li><a href="cars.html" class="text-white fw-light my-1 d-inline-block transition">Cars</a></li>
                             <li><a href="javascript:void(0)" class="text-white fw-light my-1 d-inline-block transition">Car Types</a></li>
                             <li><a href="javascript:void(0)" class="text-white fw-light my-1 d-inline-block transition">Team</a></li>
-                            <li><a href="javascript:void(0)" class="text-white fw-light my-1 d-inline-block transition">Contact</a></li>
+                            <li><a href="contact.html" class="text-white fw-light my-1 d-inline-block transition">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -559,42 +582,51 @@
         <a href="#" class="d-flex justify-content-center rounded-circle align-items-center"><i class="fa-light fa-arrow-up"></i></a>
     </div>
 
-
-
-
-    <!-- jqury cdn -->
+    <!-- JavaScript -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
-
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
 
-    <!-- compony carousel code -->
     <script>
+        // Image Gallery Function
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+            
+            // Update active thumbnail
+            const thumbs = document.querySelectorAll('.thumb');
+            thumbs.forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        // Owl Carousel for Similar Cars
         $(document).ready(function(){
-            $('.compony-carousel').owlCarousel({
+            $('.product-carousel').owlCarousel({
+                center: true,
+                items: 2,
                 loop: true,
-                margin: 10,
+                margin: 30,
                 nav: false,
-                dots:false,
+                dots: false,
                 responsive: {
                     0: {
                         items: 1
                     },
-                    576: {
+                    768: {
                         items: 2
                     },
-                    768: {
-                        items: 3
-                    },
                     992: {
-                        items: 4
-                    },
-                    1200: {
-                        items: 6
+                        items: 3
                     }
                 }
             });
+        });
+        
+        // Form Submission
+        document.querySelector('.booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your booking request has been submitted. Our team will contact you shortly.');
         });
     </script>
 </body>

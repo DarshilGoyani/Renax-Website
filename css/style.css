@@ -7,6 +7,7 @@
 body{
     font-family: 'Outfit';
     background-color: #1B1B1B;
+    overflow-x: hidden;
 }
 h1{
     font-size: 90px;
@@ -243,7 +244,7 @@ header .sub-menu i{
 .product .item{
     width: 100%;
     overflow: visible;
-    padding-bottom: 70px;
+    padding-bottom: 150px;
 }
 .product .owl-carousel .owl-stage {
     display: flex;
@@ -256,7 +257,7 @@ header .sub-menu i{
 }
 .product .img-cnt {
     position: absolute;
-    top: 75%; 
+    top: 65%; 
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--bg-dark);
@@ -306,8 +307,6 @@ header .sub-menu i{
     top: 30px;
     left: 30px;
 }
-
-
 
 /* services */
 .services .service-item .img-wrapper {
@@ -375,13 +374,11 @@ header .sub-menu i{
 .shap-left-top , .shap-right-top{ 
     top: -190px;
     right: -268px;
-
     transform: rotate(90deg);
 }
 .shap-right-top{
     top: -239px;
     right: -160px;
-
 }
 
 /* blog */
@@ -498,4 +495,336 @@ footer input:focus{
     border: 1px solid var(--theme-color);
     width: 55px;
     height: 55px;
+}
+
+/* Mobile Navigation */
+.navbar-toggler {
+    border: 1px solid var(--theme-color);
+    padding: 8px 12px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f5b754' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-nav ul li a:hover {
+    color: var(--theme-color) !important;
+    transition-duration: 0.5s;
+}
+
+/* Car Collection Section */
+.car-collection .collection-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.car-collection .collection-item:hover {
+    transform: translateY(-5px);
+}
+
+.car-collection .collection-img-wrapper img {
+    transition: transform 0.3s ease;
+}
+
+.car-collection .collection-item:hover .collection-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.car-collection .collection-info {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+}
+
+/* More Collection Button Styling */
+.more-collection-btn {
+    background-color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(245, 183, 84, 0.3);
+}
+
+.more-collection-btn:hover {
+    background-color: white;
+    color: var(--bg-dark) !important;
+    border-color: var(--theme-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(245, 183, 84, 0.4);
+}
+
+.more-collection-btn i {
+    transition: transform 0.3s ease;
+}
+
+.more-collection-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* SAFE RESPONSIVE FIXES - DESKTOP FIRST */
+@media (max-width: 991.98px) {
+    .mobile-nav {
+        background-color: var(--bg-dark);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    .banner .d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .banner .d-flex a {
+        width: 280px;
+        text-align: center;
+    }
+    
+    .poster-1 form .rent-item {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+    }
+    
+    .poster-1 form select,
+    .poster-1 form .rent-item a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner h1 {
+        font-size: 50px;
+    }
+    
+    .py {
+        padding: 80px 0;
+    }
+    
+    .banner .d-flex a {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .product .img-cnt {
+        position: relative;
+        transform: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-top: -40px;
+        display: block !important;
+        opacity: 1 !important;
+    }
+    
+    .product .img-cnt .d-flex {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-about {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    .py {
+        padding: 60px 0;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+/* Banner Responsive Styles */
+
+/* Large Desktop - Default styles already in place */
+.banner h1 {
+    font-size: 90px;
+}
+
+.banner h6 {
+    font-size: 10px;
+    letter-spacing: 6px;
+}
+
+.banner h5 {
+    font-size: 1.25rem;
+}
+
+/* Tablets and Small Laptops */
+@media (max-width: 1199.98px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .banner h5 {
+        font-size: 1.1rem;
+    }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .banner {
+        height: 55vh;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+    }
+
+    .banner h6 {
+        font-size: 9px;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+    }
+
+    .banner h5 {
+        font-size: 1rem;
+        margin-bottom: 25px !important;
+    }
+
+    .banner .d-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 12px 30px;
+        font-size: 13px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 767.98px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .banner h6 {
+        font-size: 8px;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+    }
+
+    .banner h5 {
+        font-size: 0.95rem;
+        margin-bottom: 20px !important;
+    }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 10px 25px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 575.98px) {
+    .banner {
+        height: 45vh;
+        min-height: 400px;
+    }
+
+    .banner .container {
+        padding: 0 20px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .banner h6 {
+        font-size: 7px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .banner h5 {
+        font-size: 0.85rem;
+        margin-bottom: 15px !important;
+    }
+
+    .banner h5 span {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 12px 20px;
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .banner .banner-viewd {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner .banner-rentn {
+        margin-left: 0;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 374.98px) {
+    .banner {
+        height: 40vh;
+        min-height: 350px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner h5 {
+        font-size: 0.8rem;
+    }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
 }

@@ -1,0 +1,876 @@
+/* ===================================================
+   RENAX WEBSITE - COMPLETE RESPONSIVE CSS
+   Covers: index.html, cars.html, product.html
+   Breakpoints:
+     XL: <= 1199px
+     LG: <= 991px  (tablet)
+     MD: <= 767px  (mobile landscape)
+     SM: <= 575px  (mobile portrait)
+     XS: <= 374px  (small mobile)
+=================================================== */
+
+/* ============================================================
+   GLOBAL BASE
+============================================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================
+   TYPOGRAPHY SCALE
+============================================================ */
+
+/* -- XL (<=1199px) -- */
+@media (max-width: 1199.98px) {
+    h1 { font-size: 70px; }
+    h2 { font-size: 32px; }
+}
+
+/* -- LG (<=991px, tablet) -- */
+@media (max-width: 991.98px) {
+    h1 { font-size: 54px; }
+    h2 { font-size: 28px; }
+    .py { padding: 80px 0; }
+}
+
+/* -- MD (<=767px, mobile landscape) -- */
+@media (max-width: 767.98px) {
+    h1 { font-size: 40px; line-height: 1.2; }
+    h2 { font-size: 26px; }
+    .py { padding: 60px 0; }
+    h6 { letter-spacing: 4px; }
+}
+
+/* -- SM (<=575px, mobile portrait) -- */
+@media (max-width: 575.98px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 22px; }
+    .py { padding: 50px 0; }
+    h6 { font-size: 9px; letter-spacing: 3px; }
+    .container { padding-left: 16px; padding-right: 16px; }
+}
+
+/* -- XS (<=374px, extra small) -- */
+@media (max-width: 374.98px) {
+    h1 { font-size: 26px; }
+    h2 { font-size: 20px; }
+    .py { padding: 40px 0; }
+}
+
+
+/* ============================================================
+   HEADER & NAVIGATION
+============================================================ */
+header {
+    background-color: transparent;
+}
+
+/* Mobile hamburger toggle */
+.navbar-toggler {
+    border: 1px solid var(--theme-color);
+    padding: 8px 12px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f5b754' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* Desktop nav hidden on mobile */
+@media (max-width: 991.98px) {
+    .header-nav.d-lg-flex {
+        display: none !important;
+    }
+}
+
+/* Mobile dropdown nav */
+.mobile-nav {
+    background-color: var(--bg-dark);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.mobile-nav ul li {
+    border-bottom: 1px solid rgba(245,183,84,0.15);
+}
+
+.mobile-nav ul li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav ul li a {
+    font-size: 15px;
+    padding: 10px 5px;
+}
+
+.mobile-nav ul li a:hover {
+    color: var(--theme-color) !important;
+    transition-duration: 0.5s;
+}
+
+/* Header background on scroll (added via JS in main.js) */
+header.scrolled {
+    background-color: rgba(27, 27, 27, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+
+/* ============================================================
+   BANNER / HERO SECTION (index.html)
+============================================================ */
+.banner .banner-1,
+.banner .banner-2,
+.banner .banner-3 {
+    min-height: 100vh;
+}
+
+/* XL */
+@media (max-width: 1199.98px) {
+    .banner .banner-1,
+    .banner .banner-2,
+    .banner .banner-3 {
+        height: 90vh;
+        min-height: 550px;
+    }
+
+    .banner h1 { font-size: 70px; }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+}
+
+/* LG */
+@media (max-width: 991.98px) {
+    .banner .banner-1,
+    .banner .banner-2,
+    .banner .banner-3 {
+        height: 80vh;
+        min-height: 500px;
+    }
+
+    .banner h1 { font-size: 54px; }
+    .banner h5 { font-size: 1rem; }
+    .banner h6 { font-size: 9px; letter-spacing: 4px; }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 11px 28px;
+        font-size: 13px;
+    }
+}
+
+/* MD */
+@media (max-width: 767.98px) {
+    .banner .banner-1,
+    .banner .banner-2,
+    .banner .banner-3 {
+        height: auto;
+        min-height: 100svh;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .banner h1 { font-size: 40px; }
+    .banner h5 { font-size: 0.95rem; margin-bottom: 20px !important; }
+    .banner h6 { margin-bottom: 8px; }
+
+    /* Stack buttons vertically on mobile */
+    .banner .d-flex {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        width: auto;
+        padding: 12px 28px;
+        font-size: 13px;
+        margin: 0 !important;
+        display: inline-block;
+    }
+}
+
+/* SM */
+@media (max-width: 575.98px) {
+    .banner .banner-1,
+    .banner .banner-2,
+    .banner .banner-3 {
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+
+    .banner h1 { font-size: 32px; margin-bottom: 10px; }
+    .banner h5 { font-size: 0.85rem; margin-bottom: 15px !important; }
+    .banner h6 { font-size: 8px; letter-spacing: 2px; margin-bottom: 6px; }
+
+    .banner .banner-viewd,
+    .banner .banner-rentn {
+        padding: 11px 22px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .d-flex {
+        width: 100%;
+    }
+}
+
+/* XS */
+@media (max-width: 374.98px) {
+    .banner h1 { font-size: 26px; }
+    .banner h5 { font-size: 0.8rem; }
+    .banner .banner-viewd, .banner .banner-rentn { font-size: 11px; padding: 10px 18px; }
+}
+
+
+/* ============================================================
+   PRODUCT CAROUSEL (index.html - Luxury Car Fleet)
+============================================================ */
+@media (max-width: 767.98px) {
+    /* Show info card always on mobile, not just centered slide */
+    .product .owl-item .img-cnt {
+        display: block !important;
+        opacity: 1 !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+        border-radius: 12px !important;
+    }
+
+    .product .img-cnt .d-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .product .img-cnt h5 { font-size: 17px; }
+    .product .img-cnt ul { flex-wrap: wrap; gap: 6px; }
+    .product .img-cnt li { font-size: 12px; margin: 0 !important; }
+
+    .product .item {
+        padding-bottom: 10px !important;
+    }
+}
+
+
+/* ============================================================
+   CAR COLLECTION GRID (index.html)
+============================================================ */
+@media (max-width: 575.98px) {
+    .car-collection .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .car-collection .collection-img-wrapper img {
+        height: 200px !important;
+    }
+}
+
+
+/* ============================================================
+   ABOUT SECTION (index.html)
+============================================================ */
+.about .about-img-wrapper .img-wrapper {
+    width: 100%;
+    max-width: 470px;
+}
+
+@media (max-width: 991.98px) {
+    .about .about-img-wrapper .img-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Stack columns */
+    .about .row .col-lg-6:last-child {
+        margin-top: 40px;
+    }
+
+    .about .about-title h2 br {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about .about-title {
+        text-align: center;
+    }
+
+    .about .about-cnt {
+        justify-content: center;
+    }
+
+    .about .banner-viewd {
+        display: block;
+        text-align: center;
+        margin: 0 auto !important;
+        width: auto;
+    }
+
+    /* Fix the play button wrapper */
+    .about .a-wrapper {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+/* ============================================================
+   SERVICES CAROUSEL (index.html)
+============================================================ */
+@media (max-width: 991.98px) {
+    .services .service-item .row .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    .services .service-item .img-wrapper {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .services .service-item .row {
+        flex-direction: column;
+    }
+}
+
+
+/* ============================================================
+   POSTER-1 / RENT FORM (index.html & cars.html)
+============================================================ */
+.poster-1,
+.poster-2,
+.poster-3 {
+    /* Fix background-attachment:fixed on iOS - use scroll */
+    background-attachment: scroll;
+}
+
+@media (max-width: 991.98px) {
+    .poster-1 form .rent-item {
+        flex-direction: column !important;
+        border-radius: 20px !important;
+        gap: 0;
+        padding: 15px !important;
+    }
+
+    .poster-1 form select,
+    .poster-1 .rent-item a {
+        width: 100% !important;
+        margin: 6px 0;
+        text-align: center;
+        border-radius: 12px !important;
+    }
+
+    .poster-1 .rent-item a {
+        padding: 12px 20px !important;
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   CATEGORY CAROUSEL (index.html)
+============================================================ */
+@media (max-width: 991.98px) {
+    .catagory .catagory-carousel .row .col-lg-4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .catagory .img-wrapper h5 {
+        font-size: 15px;
+        top: 15px !important;
+        left: 15px !important;
+    }
+}
+
+
+/* ============================================================
+   PROCESS SECTION (index.html)
+============================================================ */
+@media (max-width: 991.98px) {
+    .process .row .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ============================================================
+   POSTER-2 — VIDEO SECTION (index.html)
+============================================================ */
+.poster-2 a {
+    width: 90px !important;
+    height: 90px !important;
+}
+
+@media (max-width: 575.98px) {
+    .poster-2 a {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+
+/* ============================================================
+   TESTIMONIAL SECTION (index.html)
+============================================================ */
+@media (max-width: 991.98px) {
+    .testimonial .service-item .row .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Fix the testimonial decorative shapes on small screens */
+@media (max-width: 575.98px) {
+    .shap-left-top,
+    .shap-right-top {
+        display: none;
+    }
+}
+
+
+/* ============================================================
+   BLOG SECTION (index.html)
+============================================================ */
+@media (max-width: 991.98px) {
+    .blog .about-img-wrapper {
+        display: block !important;
+        width: 100%;
+    }
+
+    .blog .img-cnt {
+        bottom: auto !important;
+        right: auto !important;
+        position: relative !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blog .img-cnt h5 {
+        font-size: 14px;
+        left: 0 !important;
+        padding: 0 10px !important;
+        margin: 0 !important;
+    }
+
+    .blog .img-cnt h6 {
+        margin-right: 10px !important;
+    }
+}
+
+
+/* ============================================================
+   POSTER-3 / CTA SECTION (index.html)
+============================================================ */
+@media (max-width: 575.98px) {
+    .poster-3 .d-flex.justify-content-center {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .poster-3 .w-btn,
+    .poster-3 .r-btn {
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+/* Contact info bar at top of footer */
+.footer-about.d-flex.justify-content-around {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 991.98px) {
+    footer .footer-about.d-flex.justify-content-around {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 25px !important;
+    }
+
+    footer .footer-about.d-flex.justify-content-around > div {
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .row .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    footer .footer-about ul.d-flex {
+        justify-content: center;
+    }
+}
+
+
+/* ============================================================
+   BACK TO TOP BUTTON
+============================================================ */
+@media (max-width: 575.98px) {
+    .bottom-to-top {
+        margin: 10px !important;
+    }
+
+    .bottom-to-top a {
+        width: 44px !important;
+        height: 44px !important;
+    }
+}
+
+
+/* ============================================================
+   CARS PAGE (cars.html)
+============================================================ */
+
+/* Cars page banner */
+@media (max-width: 991.98px) {
+    /* cars.html banner is a static section with h6 and h2 */
+    .cars-page .banner,
+    section.banner:not(.position-relative .banner-carousel) {
+        height: 55vh;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* Cars page banner h6 gets proper top spacing for mobile header */
+    .banner h6.text-uppercase {
+        margin-top: 80px;
+    }
+}
+
+/* Cars.html product catalogue cards */
+.product-catalogue {
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.product-img-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 55%);
+    width: 90%;
+    z-index: 2;
+    border-radius: 16px;
+}
+
+@media (max-width: 1199.98px) {
+    .product-img-wrapper { height: 260px; }
+    .product-catalogue { margin-bottom: 120px; }
+}
+
+@media (max-width: 991.98px) {
+    .product-img-wrapper { height: 240px; }
+    .product-catalogue { margin-bottom: 110px; }
+
+    .product-info .d-flex.justify-content-between {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product-img-wrapper { height: 200px; }
+    .product-catalogue { margin-bottom: 130px; }
+
+    .product-info {
+        padding: 14px !important;
+    }
+
+    .product-info h5 { font-size: 16px !important; }
+
+    .product-info ul {
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+
+    .product-info ul li { font-size: 11px !important; }
+
+    .product-info .info-right {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .product-info .info-right a {
+        padding: 8px 16px !important;
+        font-size: 12px !important;
+        margin-right: 0 !important;
+    }
+
+    .product-info .info-right h5 {
+        font-size: 16px !important;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-img-wrapper { height: 180px; }
+    .product-catalogue { margin-bottom: 115px; }
+
+    /* On very small screens, stack the cars info absolutely */
+    .product-info {
+        width: 95%;
+    }
+
+    .product-info .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-info .info-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Cars page: pagination */
+@media (max-width: 575.98px) {
+    .pagination ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .pagination ul li a {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 13px;
+    }
+}
+
+/* Cars page: search section */
+@media (max-width: 575.98px) {
+    .search-section .col-md-8 {
+        padding: 0 5px;
+    }
+}
+
+
+/* ============================================================
+   PRODUCT DETAIL PAGE (product.html)
+============================================================ */
+@media (max-width: 991.98px) {
+    .product-detail-hero {
+        padding: 160px 0 80px !important;
+    }
+
+    .booking-card {
+        position: static !important;
+        margin-top: 30px;
+    }
+
+    .car-gallery .thumbnails {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product-detail-hero {
+        padding: 140px 0 60px !important;
+    }
+
+    .price-tag { font-size: 32px !important; }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .specs-table { padding: 20px !important; }
+
+    .spec-item {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-detail-hero {
+        padding: 120px 0 50px !important;
+    }
+
+    .price-tag { font-size: 28px !important; }
+
+    .features-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .car-gallery .thumb {
+        width: 75px !important;
+        height: 55px !important;
+    }
+}
+
+
+/* ============================================================
+   OWL CAROUSEL DOTS — RESPONSIVE
+============================================================ */
+@media (max-width: 575.98px) {
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+
+/* ============================================================
+   BODY-DESIGN DIVIDER — RESPONSIVE
+============================================================ */
+@media (max-width: 575.98px) {
+    .body-design {
+        height: 40px;
+    }
+}
+
+
+/* ============================================================
+   A-WRAPPER (play button / number badge) — RESPONSIVE
+============================================================ */
+@media (max-width: 767.98px) {
+    .a-wrapper {
+        width: 72px;
+        height: 72px;
+    }
+
+    .a-wrapper a {
+        padding: 15px 18px !important;
+    }
+}
+
+
+/* ============================================================
+   COLLECTION INFO SECTION (index.html car collection grid)
+============================================================ */
+.collection-info {
+    background: linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0.7)) !important;
+}
+
+@media (max-width: 575.98px) {
+    .collection-info h5 {
+        font-size: 15px;
+    }
+
+    .collection-info h6 {
+        font-size: 18px !important;
+    }
+}
+
+
+/* ============================================================
+   MISC FIXES
+============================================================ */
+
+/* Prevent horizontal scroll on all pages */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Ensure rows don't cause overflow */
+.row {
+    --bs-gutter-x: 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+    .row {
+        --bs-gutter-x: 1rem;
+    }
+}
+
+/* Fix for overflow-hidden on sections */
+section {
+    overflow-x: hidden;
+}
+
+/* Fix the banner design bottom element on cars page */
+.banner-design {
+    bottom: -27px;
+    transform: translateX(-50%);
+}
+
+/* Ensure images in about section don't exceed parent on tablet */
+@media (max-width: 1199.98px) {
+    .about .about-img-wrapper .img-wrapper,
+    .services .service-item .img-wrapper {
+        width: 100% !important;
+        max-width: 100%;
+    }
+}
+
+/* Fix .d-inline-block wrappers used in services/catagory/blog on mobile */
+@media (max-width: 991.98px) {
+    .about-img-wrapper.d-inline-block {
+        display: block !important;
+        width: 100%;
+    }
+}
+
+/* Fix for cars page: header-nav hidden on mobile (already d-none d-lg-flex) */
+@media (max-width: 991.98px) {
+    .header-nav.d-none.d-lg-flex {
+        display: none !important;
+    }
+}
+
+/* Improve readability for small tablets — services row */
+@media (max-width: 991.98px) {
+    .services .row .col-lg-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Testimonial: make img-wrapper full width on mobile */
+@media (max-width: 991.98px) {
+    .testimonial .img-wrapper,
+    .process .img-wrapper {
+        width: 100% !important;
+    }
+}

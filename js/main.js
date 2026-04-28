@@ -107,6 +107,35 @@ document.addEventListener('DOMContentLoaded', function() {
         
         lazyImages.forEach(img => imageObserver.observe(img));
     }
+    // ============================================================
+    // Sticky header — add background when scrolling down
+    // ============================================================
+    const header = document.querySelector('header');
+    if (header) {
+        const handleHeaderScroll = () => {
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(27, 27, 27, 0.97)';
+                header.style.backdropFilter = 'blur(10px)';
+                header.style.transition = 'background-color 0.4s ease, backdrop-filter 0.4s ease';
+            } else {
+                header.style.backgroundColor = 'transparent';
+                header.style.backdropFilter = 'none';
+            }
+        };
+        window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+        handleHeaderScroll(); // Run on init
+    }
+
+    // Close mobile menu when a nav link is clicked
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const collapseEl = document.querySelector('.navbar-collapse.show');
+            if (collapseEl) {
+                collapseEl.classList.remove('show');
+            }
+        });
+    });
 });
 
 // Utility function to debounce search input
